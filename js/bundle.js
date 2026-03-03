@@ -1,7 +1,6 @@
 const PROVIDER_TYPE = {
   BANK: "bank",
   EXCHANGE: "exchange",
-  CRYPTO_EXCHANGE: "crypto-exchange",
   OTHER: "other",
 };
 
@@ -9,7 +8,6 @@ const FILTER_PROVIDER_TYPE = {
   ALL: "all",
   BANKS: "banks",
   EXCHANGES: "exchanges",
-  CRYPTO_EXCHANGES: "crypto-exchanges",
   OTHER: "other",
 };
 
@@ -466,8 +464,6 @@ class RateProviderFilterService {
             return currentProviderType === PROVIDER_TYPE.BANK;
           } else if (providerType === FILTER_PROVIDER_TYPE.EXCHANGES) {
             return currentProviderType === PROVIDER_TYPE.EXCHANGE;
-          } else if (providerType === FILTER_PROVIDER_TYPE.CRYPTO_EXCHANGES) {
-            return currentProviderType === PROVIDER_TYPE.CRYPTO_EXCHANGE;
           } else if (providerType === FILTER_PROVIDER_TYPE.OTHER) {
             return currentProviderType === PROVIDER_TYPE.OTHER;
           }

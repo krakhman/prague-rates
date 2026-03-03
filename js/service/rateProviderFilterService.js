@@ -44,8 +44,6 @@ export class RateProviderFilterService {
             return currentProviderType === PROVIDER_TYPE.BANK;
           } else if (providerType === FILTER_PROVIDER_TYPE.EXCHANGES) {
             return currentProviderType === PROVIDER_TYPE.EXCHANGE;
-          } else if (providerType === FILTER_PROVIDER_TYPE.CRYPTO_EXCHANGES) {
-            return currentProviderType === PROVIDER_TYPE.CRYPTO_EXCHANGE;
           } else if (providerType === FILTER_PROVIDER_TYPE.OTHER) {
             return currentProviderType === PROVIDER_TYPE.OTHER;
           }
