@@ -93,9 +93,15 @@ h2 {
   background-color: var(--color-gray-dark);
   font-size: 1rem;
   cursor: pointer;
-  -webkit-transition: border-color 0.3s ease, background-color 0.2s ease;
-  -moz-transition: border-color 0.3s ease, background-color 0.2s ease;
-  transition: border-color 0.3s ease, background-color 0.2s ease;
+  -webkit-transition:
+    border-color 0.3s ease,
+    background-color 0.2s ease;
+  -moz-transition:
+    border-color 0.3s ease,
+    background-color 0.2s ease;
+  transition:
+    border-color 0.3s ease,
+    background-color 0.2s ease;
   height: 36px;
   box-sizing: border-box;
   line-height: 1;
@@ -403,18 +409,12 @@ footer a:hover {
 }
 
 @media (max-width: 370px) {
-  .header-container h2 {
-    font-size: 0.75rem;
-  }
   #logo-link {
     max-width: 130px;
   }
 }
 
 @media (max-width: 350px) {
-  .header-container h2 {
-    font-size: 0.65rem;
-  }
   .controls-label {
     flex: 0 0 100%;
     font-size: 0.7rem;
